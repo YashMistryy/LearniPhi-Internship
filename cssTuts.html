@@ -22,10 +22,10 @@
         .imageDiv{
             width: max-content;
         }
-        p{
-            outline: 5px solid red;
-            display: block;
-        }
+        p::after {
+  background: bisque;
+  content: "this was added by css";
+}
         a{
             outline: 3px solid blueviolet;
             display: inline-block;
@@ -34,21 +34,88 @@
             padding: 30px;
             display: inl;
         }
+        .div1{
+            width: 500px;
+            background-color: blueviolet;
+        }
+        .div2{
+            width: 500px;
+            height: 300px;
+            border: 90px solid brown;
+            padding: 50px;
+            box-sizing: content-box;
+        }
+        .red-text{
+            color: red;
+        }
+        .yellow-text{
+            color:yellow;
+        }
+        .blue-text{
+            color:blue;
+        }
+        .red-outline{
+            outline: 2px solid red;
+        }
+        .blue-outline,
+        .blue-outline:after{
+            content: "#";
+            outline: 2px solid blue;
+        }
+        /* .special-div{
+            background-color: aquamarine;
+        } */
+        [width="200px"]{ background-color: aquamarine;}
+        .vip-link:hover{
+            color: crimson;
+        }
+        ::selection {
+  background:blueviolet;
+  color: white;
+}
+.my-element {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
     </style>
 </head>
 <body>
-    <!-- <p class="the_box">
+    <!-- <p >
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sunt quam asperiores! Fuga mollitia optio consequatur tempora perspiciatis similique molestias nesciunt? Voluptas dolore molestias possimus tempore officiis placeat minus doloremque?
+        
+    </p>
+    <p >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sunt quam asperiores! Fuga mollitia optio consequatur tempora perspiciatis similique molestias nesciunt? Voluptas dolore molestias possimus tempore officiis placeat minus doloremque?
+        
+    </p>
+    <p >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sunt quam asperiores! Fuga mollitia optio consequatur tempora perspiciatis similique molestias nesciunt? Voluptas dolore molestias possimus tempore officiis placeat minus doloremque?
+        
+    </p>
+    <p >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sunt quam asperiores! Fuga mollitia optio consequatur tempora perspiciatis similique molestias nesciunt? Voluptas dolore molestias possimus tempore officiis placeat minus doloremque?
+        
     </p> -->
-
     <!-- <p class="content-sizing">
         this is so funnn!
     </p> -->
     <!-- <div class="imageDiv">
         <img src="http://source.unsplash.com/CiFaYIvZyyA/800" width="1000px" height="900px" alt="there should be an image here!">
     </div> -->
-    <p >
+    <!-- <p >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod ex consequatur ad quaerat soluta  <a href="" class="link"> ipsa minima, dolor corporis aspernatur.</a> Illum perferendis quia placeat minus facilis! Magni praesentium ipsum quisquam aliquid!
+    </p> -->
+    <!-- <div class="div1">this is 100 px</div>
+    <div class="div2">this is ?</div> -->
+    <!-- <p class="red-text blue-outline">
+        this is some horendous text!
     </p>
+    <div width="200px" class="special-div">this is dope</div>
+    <a href="www.google.com" class="vip-link">a very special link</a> -->
+    <h1 class="my-element">Heading</h1>
 </body>
 </html>
