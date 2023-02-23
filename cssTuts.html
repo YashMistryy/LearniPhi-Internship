@@ -22,10 +22,10 @@
         .imageDiv{
             width: max-content;
         }
-        p::after {
-  background: bisque;
-  content: "this was added by css";
-}
+            /* p::after {
+    background: bisque;
+    content: "this was added by css";
+    } */
         a{
             outline: 3px solid blueviolet;
             display: inline-block;
@@ -75,10 +75,37 @@
 }
 .my-element {
   color: red;
+  font-size: 1rem;
+}
+.my-element-2 {
+  color: red;
+  font-size: 1;
+  background-color: aquamarine;
+  line-height: 5px;
+  
+}
+.my-element-3 {
+  color: red;
+  font-size: 1px;
 }
 
 h1 {
   color: blue;
+}
+.specialDiv{
+background-color: aquamarine;
+width: 600px;
+height: 600px;
+}
+ .specialPara{
+    padding: 10%;
+    background-color: blue;
+}
+.sizeDiv{
+position: absolute;
+}
+.container {
+  display: flex;
 }
 
     </style>
@@ -116,6 +143,24 @@ h1 {
     </p>
     <div width="200px" class="special-div">this is dope</div>
     <a href="www.google.com" class="vip-link">a very special link</a> -->
-    <h1 class="my-element">Heading</h1>
+    <!-- <h1 class="my-element">Heading</h1>
+    <p>this is a paragraph
+    <h1 class="my-element-2">Heading</h1></p>
+    <h1 class="my-element-3">Heading</h1> -->
+    <!-- <div class="specialDiv">
+        vid a asi siht
+        <p class="specialPara">
+            this is a para
+        </p>
+    </div> -->
+    <!-- <div class="sizeDiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo dolorum, hic, consequuntur, nisi voluptate quos illo mollitia ab natus earum ducimus laboriosam debitis commodi quaerat quae ipsam quibusdam quidem.
+    </div> -->
+    <div class="container" id="container">
+        <div>One</div>
+        <div>Item two</div>
+        <div>The item we will refer to as three</div>
+      </div>
+
 </body>
 </html>

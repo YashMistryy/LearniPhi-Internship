@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+    display: grid;
+    grid-template-columns:
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr),
+      minmax(0,1fr);
+}
+.item{
+    background-color: antiquewhite;
+}
+.my-element {
+background-color: aqua;
+background: var(--color-primary-x-light);
+margin: 50px;
+}
+p:hover{
+    color: aqua;
+    background-color: brown;
+}
+p::first-letter{
+    color: aliceblue;
+background-color: black;
+}
+p::before{
+    content: "₹";
+}
+p::after{
+    content: "₹";
+}
+    </style>
+</head>
+<body >
+    <!-- <div class="container">
+        <div class="item"><button>item1</button></div>
+        <div class="item"><button>item2</button></div>
+        <div class="item"><button>item3</button></div>
+      </div>
+      <div class="my-element">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ea autem natus? Nam tenetur cum ipsam eum debitis! Velit quasi ratione nisi optio magni odit quia distinctio dolore, impedit animi.
+           <code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio </code>voluptatem pariatur doloremque aperiam sed commodi dolores eaque doloribus, illo maiores corrupti! Doloremque architecto sunt eligendi expedita saepe ea officiis?
+        
+      </div> -->
+      <div class="paraC">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad adipisci omnis quidem exercitationem obcaecati veniam, odio facilis sunt cupiditate ut! Velit, ut impedit a laboriosam voluptatem facere provident tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad adipisci omnis quidem exercitationem obcaecati veniam, odio facilis sunt cupiditate ut! Velit, ut impedit a laboriosam voluptatem facere provident tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad adipisci omnis quidem exercitationem obcaecati veniam, odio facilis sunt cupiditate ut! Velit, ut impedit a laboriosam voluptatem facere provident tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad adipisci omnis quidem exercitationem obcaecati veniam, odio facilis sunt cupiditate ut! Velit, ut impedit a laboriosam voluptatem facere provident tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad adipisci omnis quidem exercitationem obcaecati veniam, odio facilis sunt cupiditate ut! Velit, ut impedit a laboriosam voluptatem facere provident tempora?</p>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad adipisci omnis quidem exercitationem obcaecati veniam, odio facilis sunt cupiditate ut! Velit, ut impedit a laboriosam voluptatem facere provident tempora?</p>
+          
+      </div>
+</body>
+</html>
