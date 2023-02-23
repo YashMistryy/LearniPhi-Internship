@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid{
+            background-color: red;
+        }
+        button{
+            outline: 5px solid red;
+        }
+        button:focus {
+	outline: none;
+}
+button:focus-visible {
+	outline: 2px dashed blue;
+  outline-offset: 2px;
+}
+#content:target {
+	background: rgb(24, 152, 172);
+}
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text"><br>
+        <input type="email">
+        <a href="#content">this is a btn</a>
+    </form>
+    <article id="content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque odio ipsa consequatur porro, esse pariatur eligendi hic excepturi illum corporis nostrum tempora dicta explicabo harum aspernatur. Magnam, consequatur deserunt.
+    </article>
+</body>
+</html>

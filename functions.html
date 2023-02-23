@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+    <style>
+        .my-element {
+  mix-blend-mode: color-dodge;
+}
+
+
+/* Presentational styles*/
+.demo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.5rem;
+  max-width: 550px;
+  margin: 2em auto;
+  padding: 1em;
+  background: orange;
+}
+
+.demo p {
+  margin-top: 0.5rem;
+}
+
+.demo img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <div>
+          <img src="https://source.unsplash.com/dPklt2rBgDw/500X300" alt="Diagonal checkboard tiles" />
+          <p>No blend mode</p>
+        </div>
+        <div>
+          <img src="https://source.unsplash.com/dPklt2rBgDw/500X300" alt="Diagonal checkboard tiles" class="my-element" />
+          <p><code>mix-blend-mode: difference;</code></p>
+        </div>
+      </div>
+</body>
+</html>
