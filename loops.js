@@ -12,7 +12,17 @@ let username ="";
 
 // backtick can be used for making strings dynamic in some sense
 
-let houlyRate = 15.5;
-let weekHours = 40;
+// let houlyRate = 15.5;
+// let weekHours = 40;
 
-console.log(`you have worked ${weekHours} hours this week so amount $ ${houlyRate*weekHours} will be credited to your account! and your monthly average should be ${4*houlyRate*weekHours}`);
+// console.log(`you have worked ${weekHours} hours this week so amount $ ${houlyRate*weekHours} will be credited to your account! and your monthly average should be ${4*houlyRate*weekHours}`);
+
+// let fruitLists = ['peach','dragon fruit','blueberry','sweet lime']
+
+// for(let fruit of fruitLists){
+//     fruit = " fruit";
+// }
+// console.log(fruitLists)
+
+let btn = document.getElementById("btn");
+btn.focus()
