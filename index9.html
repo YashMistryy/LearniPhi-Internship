@@ -7,9 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="index10.js">
+    <h1 id="myh1"></h1>
+    <button id="btn">generate sum</button>
+    <button id="btnColor">change color</button>
+    <script>
+       const btnColor = document.getElementById("btnColor");
+       const btnSum = document.getElementById("btn");
        
+       let worker = new Worker('worker.js')
+       
+       function random(h){ return Math.ceil(Math.random()*h)}
 
+       btnColor.addEventListener("click",()=>{
+        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+        document.body.style.background = rndCol;
+       })
+
+       btnSum.addEventListener("click",()=>{
+      
+        worker.postMessage("start working on this");
+
+       })
+
+       worker.onmessage = function(message){
+        alert(message.data)
+       }
     </script>
 </body>
 </html>
